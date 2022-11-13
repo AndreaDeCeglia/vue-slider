@@ -37,6 +37,40 @@ var app = new Vue(
 
         methods: {
 
+            rightFlow: function(){ //Funzione freccia in giù
+                if( this.index < this.images.length - 1 ){
+                 return this.index++;
+              } 
+               return this.index = 0
+            },
+
+            leftFlow: function(){ //Funzione freccia in su
+                if( this.index > 0 ){
+                return this.index--;
+              } 
+                return this.index = this.images.length -1
+            },
+            
+            img0: function(){ //Funzione al click del pallino vado all'immagine
+                return this.index = 0;
+            },
+
+            img1: function(){ //Funzione al click del pallino vado all'immagine
+                return this.index = 1;
+            },
+
+            img2: function(){ //Funzione al click del pallino vado all'immagine
+                return this.index = 2;
+            },
+            
+            img0: function(){ //Funzione al click del pallino vado all'immagine
+                return this.index = 3;
+            },
+            
+            img0: function(){ //Funzione al click del pallino vado all'immagine
+                return this.index = 4;
+            },
+
         },
     }
 )
