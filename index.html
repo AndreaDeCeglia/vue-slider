@@ -17,22 +17,72 @@
 
 </head>
   
-<body>
+<body class="bg-dark">
 
     <div id="root">
-        <div id="mainContainer" class="d-flex justify-content-center align-items-center">
-            <div id="caruselContainer" class="container d-flex justify-content-between align-items-center">
-                <i class="fa-solid fa-chevron-left"></i>
-                <i class="fa-solid fa-chevron-right"></i>
-            </div>
-        </div>
-    </div>
+        
+        <div id="caruselContainer" class="justify-content-center align-items-center text-center w-100">
+          
+            <div class="d-flex align-items-center justify-content-center w-100">
+            
+                <!-- main img's container -->
+                <div>
+                
+                    <!-- main img -->
+                    <img class="dimensionImg my-3":src="photos[index].image" alt=""/>
+              
+                    <!-- changer circles' container -->
+                    <div class="nav-buttons d-flex justify-content-center align-items-center w-100 text-center">
+                
+                        <!-- first circle for img0 -->
+                        <button type="button" @click="img0" class="mx-2 circle"></button>
+                        <!-- second circle for img1 -->
+                        <button type="button" @click="img1" class="mx-2 circle"></button>
+                        <!-- third circle for img2 -->
+                        <button type="button" @click="img2" class="mx-2 circle"></button>
+                        <!-- fourth circle for img3 -->
+                        <button type="button" @click="img3" class="mx-2 circle"></button>
+                        <!-- fiveth circle for img4 -->
+                        <button type="button" @click="img4" class="mx-2 circle"></button>
+                
+                    </div>
+            
+                </div>
 
-    <!-- Vue@2.js -->
-    <script src="./assets/js/vue@2.js"></script>
+                <!-- Thumbnails' container -->
+                <div id="thumbnails" class="d-flex flex-column">
+
+                    <!-- arrow up -->
+                    <i class="fa-solid fa-arrow-up mx-2" @click="leftDirection"></i>
+
+                    <!-- first thumbnails' img -->
+                    <img :src="photos[0].image" class="img-thumbnail dimensionThumb" alt="..."/>
+                    <!-- second thumbnails' img -->
+                    <img :src="photos[1].image" class="img-thumbnail dimensionThumb" alt="..."/>
+                    <!-- third thumbnails' img -->
+                    <img :src="photos[2].image" class="img-thumbnail dimensionThumb" alt="..."/>
+                    <!-- fourth thumbnails' img -->
+                    <img :src="photos[3].image" class="img-thumbnail dimensionThumb" alt="..."/>
+                    <!-- fiveth thumbnails' img -->
+                    <img :src="photos[4].image" class="img-thumbnail dimensionThumb" alt="..."/>
+              
+                    <!-- arrow down -->
+                    <i class="fa-solid fa-arrow-down mx-2" @click="rightDirection" ></i>
+            
+                </div>
+          
+            </div>
+        
+        </div>
+    
+    </div>
 
     <!-- Bootstrap v5.2 -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
+    
+    <!-- Vue@2.js -->
+    <script src="./assets/js/vue@2.js"></script>
   
 </body>
 </html>

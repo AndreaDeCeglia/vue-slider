@@ -11,10 +11,35 @@
 
 #caruselContainer{
     height: 80%;
-    background-color: blue;
+    /* background-color: blue; */
 }
 
 .fa-solid{
-    font-size: 4rem;
+    font-size: 2rem;
     color: white;
+}
+
+.dimensionImg {
+    width: 700px;
+    height: 450px;
+  }
+  
+.dimensionThumb {
+    height: 20%;
+}
+  
+.circle {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 0;
+    background-color: blue;
+}
+  
+.styleCorrect {
+    border: 2px solid green;
+}
+  
+.styleError {
+    border: 2px solid red;
 }

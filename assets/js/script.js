@@ -6,30 +6,33 @@ var app = new Vue(
             photos: [
                 {
                     name: 'imageNumber0',
-                    image: './../img/pexels-eugene-shelestov-33930.jpg',
+                    image: 'https://images.pexels.com/photos/2544976/pexels-photo-2544976.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load',
                     description: '',
                 },
                 {
                     name: 'imageNumber1',
-                    image: './../img/pexels-kelly-2544992.jpg',
+                    image: '/assets/img/pexels-kelly-2544992.jpg',
                     description: '',
                 },
                 {
                     name: 'imageNumber2',
-                    image: './../img/pexels-pixabay-220129.jpg',
+                    image: '/assets/img/pexels-pixabay-220129.jpg',
                     description: '',
                 },
                 {
                     name: 'imageNumber3',
-                    image: './../img/pexels-sebastian-sørensen-750225.jpg',
+                    image: '/assets/img/pexels-sebastian-sørensen-750225.jpg',
                     description: '',
                 },
                 {
                     name: 'imageNumber4',
-                    image: './../img/pexels-skitterphoto-9334.jpg',
+                    image: '/assets/img/pexels-skitterphoto-9334.jpg',
                     description: '',
                 },        
             ],
+
+            index: 0,
+
         },
 
         methods: {
