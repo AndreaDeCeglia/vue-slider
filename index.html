@@ -30,7 +30,7 @@
                 
                     <!-- main img -->
                     <img class="dimensionImg my-3":src="photos[index].image" alt=""/>
-              
+                                  
                     <!-- changer circles' °°°°° container -->
                     <div class="nav-buttons d-flex justify-content-center align-items-center w-100 text-center">
                 
@@ -56,15 +56,15 @@
                     <i class="fa-solid fa-arrow-up mx-2" @click="leftFlow"></i>
 
                     <!-- first thumbnails' img -->
-                    <img :src="photos[0].image" class="img-thumbnail dimensionThumb" alt="..."/>
+                    <img :src="photos[0].image" class="img-thumbnail dimensionThumb" :class="dinamicClass" alt="..."/>
                     <!-- second thumbnails' img -->
-                    <img :src="photos[1].image" class="img-thumbnail dimensionThumb" alt="..."/>
+                    <img :src="photos[1].image" class="img-thumbnail dimensionThumb" :class="dinamicClass" alt="..."/>
                     <!-- third thumbnails' img -->
-                    <img :src="photos[2].image" class="img-thumbnail dimensionThumb" alt="..."/>
+                    <img :src="photos[2].image" class="img-thumbnail dimensionThumb" :class="dinamicClass" alt="..."/>
                     <!-- fourth thumbnails' img -->
-                    <img :src="photos[3].image" class="img-thumbnail dimensionThumb" alt="..."/>
+                    <img :src="photos[3].image" class="img-thumbnail dimensionThumb" :class="dinamicClass" alt="..."/>
                     <!-- fiveth thumbnails' img -->
-                    <img :src="photos[4].image" class="img-thumbnail dimensionThumb" alt="..."/>
+                    <img :src="photos[4].image" class="img-thumbnail dimensionThumb" :class="dinamicClass" alt="..."/>
               
                     <!-- arrow down -->
                     <i class="fa-solid fa-arrow-down mx-2" @click="rightFlow" ></i>

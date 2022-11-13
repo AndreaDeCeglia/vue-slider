@@ -33,6 +33,8 @@ var app = new Vue(
 
             index: 0,
 
+            dinamicClass: `opacity`,
+
         },
 
         methods: {
@@ -40,6 +42,7 @@ var app = new Vue(
             rightFlow: function(){ //Funzione freccia in giù
                 if( this.index < this.photos.length - 1 ){
                     console.log(`you're flowing up`)
+                    //this.dinamicClass = false;
                     return this.index++;
                 } 
                 return this.index = 0
