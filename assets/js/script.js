@@ -21,7 +21,7 @@ var app = new Vue(
                 },
                 {
                     name: 'imageNumber3',
-                    image: 'https://images.pexels.com/photos/45244/fire-match-flame-sulfur-45244.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load',
+                    image: 'https://images.pexels.com/photos/1082343/pexels-photo-1082343.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load',
                     description: '',
                 },
                 {
@@ -78,6 +78,14 @@ var app = new Vue(
                 return this.index = 4;
             },
 
+            timer: function(){
+                setInterval( this.rightFlow, 3000 )
+            },
+
+        },
+
+        created(){
+            this.timer();
         },
     }
 );
