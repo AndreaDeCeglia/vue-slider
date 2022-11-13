@@ -11,22 +11,22 @@ var app = new Vue(
                 },
                 {
                     name: 'imageNumber1',
-                    image: '/assets/img/pexels-kelly-2544992.jpg',
+                    image: 'https://images.pexels.com/photos/1629159/pexels-photo-1629159.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load',
                     description: '',
                 },
                 {
                     name: 'imageNumber2',
-                    image: '/assets/img/pexels-pixabay-220129.jpg',
+                    image: 'https://images.pexels.com/photos/750225/pexels-photo-750225.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load',
                     description: '',
                 },
                 {
                     name: 'imageNumber3',
-                    image: '/assets/img/pexels-sebastian-sørensen-750225.jpg',
+                    image: 'https://images.pexels.com/photos/45244/fire-match-flame-sulfur-45244.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load',
                     description: '',
                 },
                 {
                     name: 'imageNumber4',
-                    image: '/assets/img/pexels-skitterphoto-9334.jpg',
+                    image: 'https://images.pexels.com/photos/10957528/pexels-photo-10957528.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load',
                     description: '',
                 },        
             ],
@@ -38,39 +38,46 @@ var app = new Vue(
         methods: {
 
             rightFlow: function(){ //Funzione freccia in giù
-                if( this.index < this.images.length - 1 ){
-                 return this.index++;
-              } 
-               return this.index = 0
+                if( this.index < this.photos.length - 1 ){
+                    console.log(`you're flowing up`)
+                    return this.index++;
+                } 
+                return this.index = 0
             },
 
             leftFlow: function(){ //Funzione freccia in su
                 if( this.index > 0 ){
-                return this.index--;
-              } 
-                return this.index = this.images.length -1
+                    console.log(`you're flowing down`)
+                    return this.index--;
+                    } 
+                return this.index = this.photos.length -1
             },
             
             img0: function(){ //Funzione al click del pallino vado all'immagine
+                console.log(`you're seeing the image number 0`)
                 return this.index = 0;
             },
 
             img1: function(){ //Funzione al click del pallino vado all'immagine
+                console.log(`you're seeing the image number 1`)
                 return this.index = 1;
             },
 
             img2: function(){ //Funzione al click del pallino vado all'immagine
+                console.log(`you're seeing the image number 2`)
                 return this.index = 2;
             },
             
-            img0: function(){ //Funzione al click del pallino vado all'immagine
+            img3: function(){ //Funzione al click del pallino vado all'immagine
+                console.log(`you're seeing the image number 3`)
                 return this.index = 3;
             },
             
-            img0: function(){ //Funzione al click del pallino vado all'immagine
+            img4: function(){ //Funzione al click del pallino vado all'immagine
+                console.log(`you're seeing the image number 4`)
                 return this.index = 4;
             },
 
         },
     }
-)
+);

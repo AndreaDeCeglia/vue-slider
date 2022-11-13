@@ -4,10 +4,6 @@
     box-sizing: border-box;
 }
 
-#mainContainer{
-    height: 100vh;
-    width: 100vw;
-}
 
 #caruselContainer{
     height: 80%;
@@ -17,6 +13,7 @@
 .fa-solid{
     font-size: 2rem;
     color: white;
+    cursor: pointer;
 }
 
 .dimensionImg {
@@ -25,7 +22,7 @@
   }
   
 .dimensionThumb {
-    height: 20%;
+    height: 100px;
 }
   
 .circle {
@@ -33,7 +30,7 @@
     height: 15px;
     border-radius: 50%;
     border: 0;
-    background-color: blue;
+    background-color: white;
 }
   
 .styleCorrect {
