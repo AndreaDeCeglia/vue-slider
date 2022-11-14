@@ -85,6 +85,10 @@ var app = new Vue(
                 setInterval( this.rightFlow, 3000 )
             },
 
+            select( indexSelect){
+                return this.index = indexSelect;
+            },
+
         },
 
         created(){

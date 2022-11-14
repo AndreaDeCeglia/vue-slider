@@ -42,3 +42,7 @@
 .opacity{
     opacity: .5;
 }
+
+.noOpacity{
+    opacity: 1;
+}

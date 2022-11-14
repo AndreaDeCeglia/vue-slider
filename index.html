@@ -29,21 +29,23 @@
                 <div>
                 
                     <!-- main img -->
-                    <img class="dimensionImg my-3":src="photos[index].image" alt=""/>
-                                  
+                    <img class="dimensionImg my-3":src="photos[index].image" :alt="photos[index].description"/>
+
                     <!-- changer circles' °°°°° container -->
                     <div class="nav-buttons d-flex justify-content-center align-items-center w-100 text-center">
-                
+                        
                         <!-- first circle for img0 -->
-                        <button type="button" @click="img0" class="mx-2 circle"></button>
+                        <!-- <button type="button" @click="img0" class="mx-2 circle"></button> -->
                         <!-- second circle for img1 -->
-                        <button type="button" @click="img1" class="mx-2 circle"></button>
+                        <!-- <button type="button" @click="img1" class="mx-2 circle"></button> -->
                         <!-- third circle for img2 -->
-                        <button type="button" @click="img2" class="mx-2 circle"></button>
+                        <!-- <button type="button" @click="img2" class="mx-2 circle"></button> -->
                         <!-- fourth circle for img3 -->
-                        <button type="button" @click="img3" class="mx-2 circle"></button>
+                        <!-- <button type="button" @click="img3" class="mx-2 circle"></button> -->
                         <!-- fiveth circle for img4 -->
-                        <button type="button" @click="img4" class="mx-2 circle"></button>
+                        <!-- <button type="button" @click="img4" class="mx-2 circle"></button> -->
+
+                        <i class="fa-solid fa circle mx-3" :class="(index == indexSelect) ? 'noOpacity' : 'dinamicClass'" v-for="( elem, indexSelect ) in photos" @click="select(indexSelect)"></i>
                 
                     </div>
             
@@ -56,15 +58,15 @@
                     <i class="fa-solid fa-arrow-up mx-2" @click="leftFlow"></i>
 
                     <!-- first thumbnails' img -->
-                    <img :src="photos[0].image" class="img-thumbnail dimensionThumb" :class="dinamicClass" alt="..."/>
+                    <img v-for="(elem, indexPhoto) in photos" :src="elem.image" class="img-thumbnail dimensionThumb opacity"  :class="(index == indexPhoto) ? 'noOpacity' : ''" alt="..."/>
                     <!-- second thumbnails' img -->
-                    <img :src="photos[1].image" class="img-thumbnail dimensionThumb" :class="dinamicClass" alt="..."/>
-                    <!-- third thumbnails' img -->
-                    <img :src="photos[2].image" class="img-thumbnail dimensionThumb" :class="dinamicClass" alt="..."/>
-                    <!-- fourth thumbnails' img -->
-                    <img :src="photos[3].image" class="img-thumbnail dimensionThumb" :class="dinamicClass" alt="..."/>
-                    <!-- fiveth thumbnails' img -->
-                    <img :src="photos[4].image" class="img-thumbnail dimensionThumb" :class="dinamicClass" alt="..."/>
+                    <!--<img :src="photos[1].image" class="img-thumbnail dimensionThumb" :class="(index == indexSelect) ? 'noOpacity' : 'dinamicClass'" alt="..."/>
+                    
+                    <img :src="photos[2].image" class="img-thumbnail dimensionThumb" :class="(index == indexSelect) ? 'noOpacity' : 'dinamicClass'" alt="..."/>
+                    
+                    <img :src="photos[3].image" class="img-thumbnail dimensionThumb" :class="(index == indexSelect) ? 'noOpacity' : 'dinamicClass'" alt="..."/>
+                    
+                    <img :src="photos[4].image" class="img-thumbnail dimensionThumb" :class="(index == indexSelect) ? 'noOpacity' : 'dinamicClass'" alt="..."/>-->
               
                     <!-- arrow down -->
                     <i class="fa-solid fa-arrow-down mx-2" @click="rightFlow" ></i>
